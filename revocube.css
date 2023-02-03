@@ -1,6 +1,5 @@
 body {
-    font-family: var(--bs-body-font-family);
-
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 *::before,
@@ -32,12 +31,16 @@ header {
 }
 
 #logo {
-    margin: -6rem;
+    margin-right: 13rem;
 }
 
 nav ul {
     display: flex;
     gap: 50px;
+}
+
+.content {
+    width: 52%;
 }
 
 nav ul li {
@@ -52,7 +55,12 @@ nav ul a {
 header nav ul a li {
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: #272727;
+    font-size: 16px;
+}
+
+header nav ul a li:hover {
+    color: #FF0000;
 }
 
 .splitSection {
@@ -61,15 +69,17 @@ header nav ul a li {
 }
 
 .firstSplit p {
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 56px;
+    font-weight: 700;
+    color: #1F1D1D;
     margin-top: 0px;
 }
 
 .split p {
-    font-size: 17px;
-    font-weight: 300;
-    word-spacing: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 0.8px;
+    color: #666666;
 }
 
 #letsTalk {
@@ -82,9 +92,6 @@ header nav ul a li {
     cursor: pointer;
 }
 
-#letsTalk:hover {
-    border: 2px solid;
-}
 
 .images {
     width: 100%;
@@ -141,6 +148,12 @@ p.boldParagraph {
     font-weight: 500;
 }
 
+p.boldParagraph2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
 #featuredImages {
     width: 13%;
 }
@@ -150,7 +163,7 @@ p.boldParagraph {
 }
 
 .paragraphContent {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 800;
 }
 
@@ -161,6 +174,27 @@ p.boldParagraph {
     border-radius: 5px;
     padding: 30px;
     justify-content: center;
+}
+
+.clients h5 {
+    font-size: 50px;
+    margin-top: 50px;
+    width: 50%;
+    font-weight: 800px;
+}
+
+.clientReview {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.diectionIcons {
+    width: 30%;
+}
+
+.fa {
+    font-size: 40px;
 }
 
 p.reviews {
@@ -176,6 +210,7 @@ p.reviews {
     color: white;
     border-radius: 5px;
     margin-top: ;
+    width: 100%;
 }
 
 p.darkDivContent {
@@ -215,6 +250,11 @@ a.socials {
     font-weight: 600;
 }
 
+.row h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 a.socials:hover {
     color: rgba(0, 0, 0, 0.708);
 }
@@ -226,7 +266,7 @@ a.socials:hover {
     color: black;
     font-size: 15px;
     font-weight: 600;
-    width: 75%;
+    width: 30%;
     max-width: 100%;
 }
 
@@ -261,12 +301,6 @@ a.socials:hover {
         outline: none;
         font-size: 5px;
         display: inline;
-    }
-
-
-    .active,
-    .collapsible:hover {
-        background-color: black;
     }
 
     .content {
@@ -375,6 +409,12 @@ a.socials:hover {
         cursor: pointer;
     }
 
+    .clientReview h5 {
+        font-size: 30px;
+        margin-top: 50px;
+        font-weight: 800px;
+    }
+
     .images {
         width: 100%;
         display: flex;
@@ -398,5 +438,9 @@ a.socials:hover {
     #girl,
     #boy3 {
         width: 90%;
+    }
+
+    .directionIcons {
+        display: none;
     }
 }
